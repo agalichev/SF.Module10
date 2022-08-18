@@ -7,9 +7,6 @@
             decimal a = 0;
             decimal b = 0;
             decimal? result;
-            bool shutdown;
-            int x = 0;
-            int y = 0;
 
             Calculator calculator = new Calculator();
             Func<decimal, decimal, decimal> operationDelegate;
