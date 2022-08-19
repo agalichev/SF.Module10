@@ -7,7 +7,6 @@
             decimal a = 0;
             decimal b = 0;
             decimal? result;
-
             Calculator calculator = new Calculator();
             Func<decimal, decimal, decimal> operationDelegate;
 
@@ -89,6 +88,7 @@
                         }
                     }
                     while (true);
+
                     Console.Clear();
                 }
                 catch (NumberEnteredException ex)
@@ -128,6 +128,7 @@
         public decimal Multiplication(decimal a, decimal b) { return a * b; }
 
         public decimal Subtraction(decimal a, decimal b) { return a - b; }
+
         public decimal Begin(decimal a, decimal b) { return 0; }
 
         public decimal EnterValue()
@@ -151,7 +152,6 @@
             }
             return number;
         }
-
     }
 
     public class NumberEnteredException : FormatException
