@@ -35,7 +35,7 @@ namespace Task2
             inputstr = Console.ReadLine();
             check = !decimal.TryParse(inputstr, out number) | (inputstr == "");
 
-            if (inputstr == "c")
+            if (inputstr == "cl")
             {
                 throw new Exception("Отмена");
                 return 0;
