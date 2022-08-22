@@ -14,7 +14,7 @@
             {
                 try
                 {
-                    Console.WriteLine(" Отмена операции или завершение работы калькулятора [ c ]\n");
+                    Console.WriteLine("Для отмены операции илм завершения работы введите [ cl ]\n");
                     Console.Write("Введите 1-е число: ");
                     a = calculator.EnterValue();
           
@@ -140,7 +140,7 @@
             inputstr = Console.ReadLine();
             check = !decimal.TryParse(inputstr, out number) | (inputstr == "");
 
-            if (inputstr == "c")
+            if (inputstr == "cl")
             {
                 throw new Exception("Отмена");
                 return 0;
