@@ -91,7 +91,7 @@
                 }
                 catch (NumberEnteredException ex)
                 {
-                    Console.WriteLine(ex.Message);
+                    Console.WriteLine($"{ex.Message}\n");
                 }
                 catch (Exception ex) when (ex.Message == "Отмена")
                 {
